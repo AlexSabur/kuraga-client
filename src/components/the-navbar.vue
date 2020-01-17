@@ -1,10 +1,10 @@
 <template>
-  <div class="container mx-auto">hello</div>
+  <div></div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "nuxt-property-decorator";
 
 @Component
-export default class PageIndex extends Vue {}
+export default class TheNavbar extends Vue {}
 </script>

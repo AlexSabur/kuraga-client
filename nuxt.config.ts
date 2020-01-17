@@ -9,11 +9,23 @@ const config: Configuration = {
     "@nuxtjs/tailwindcss"
   ],
 
-  modules: ["@nuxtjs/axios"],
+  plugins: [
+    //
+    "~/plugins/fields",
+    {src: "~/plugins/audio", mode: 'client'}
+  ],
+
+  modules: [
+    //
+    "@nuxtjs/axios"
+  ],
 
   axios: {
     // proxyHeaders: false
+    proxy: false
   },
+
+  proxy: {},
 
   build: {
     transpile: [/typed-vuex/]
