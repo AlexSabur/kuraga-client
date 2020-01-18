@@ -5,7 +5,8 @@ const config: Configuration = {
   srcDir: "src",
 
   server: !isDev ? {
-    host: '84.201.135.85',
+    // host: '84.201.135.85',
+    host: '0.0.0.0',
     port: 80,
   }: undefined,
   // Define your configuration with auto-completion & type checking
